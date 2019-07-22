@@ -1,0 +1,122 @@
+<!--https://github.com/lukePeavey/quotable-->
+
+<html>
+<head>
+  <script src="myScript.js"></script>
+  <style>
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav bio bar"
+    "nav footer footer";
+  grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+header, footer, bio, nav, div {
+  padding: 1.2em;
+  background: aliceblue;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainBio {
+  grid-area: bio;
+  }
+#mainNav {
+  grid-area: nav;
+  }
+#sideBar {
+  grid-area: bar;
+  }
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "bio"
+      "bar"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
+ }
+}
+
+</style>
+</head>
+
+<body>
+  <header id="pageHeader"><h1>Savannah Bryn Halvorson</h1></header>
+  <bio id="mainBio">
+    <p>Hi! My name is <strong>Savannah.</strong> I’m 17 years old and a senior at Santa Catalina School in Monterey, although I live in Modesto.</p>
+	  <p>I’m interested in art, puzzles, and coding. I enjoy drawing, sketching, and painting with traditional mediums, with a strong focus on stylized humans. My most common hobby is playing games online, especially those of a puzzle or murder-mystery variety, like chess or Ace Attorney. I’m currently learning how to code, and can program in both Processing and Python with competency. I'm also learning HTML at the moment, which is how I made this website! (That and Google...)</p>
+	  <p>While my time at school began my interest in programming, it also spurred a few of my other activities as well. For instance, I’ll be taking my fourth year of French classes, which I have been very passionate about due to the friends I’ve made online who reside in French-speaking areas. I also love theater tech, working backstage on sets or costumes to make a play run perfectly without ever having to step onstage.</p>
+	  <p>I easily adapt to all situations, get very invested in whatever I’m currently doing, and have a drive to succeed. No matter where I end up, I am determined to be a valuable asset.</p>
+    <p>Please hire me.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ex ipsum, accumsan eu augue sit amet, feugiat cursus justo. Nullam volutpat nibh eget massa maximus eleifend. Vestibulum urna magna, pretium et diam ac, efficitur consequat tellus. Suspendisse congue consequat lorem a rhoncus. In nec tortor libero. Vestibulum nec vestibulum sem, ut egestas magna. Nulla malesuada bibendum cursus. Integer tempor, justo id tincidunt imperdiet, leo dui venenatis ligula, eget venenatis erat mauris id magna.
+    Flippity flap, flippity flap, put the pancake on the stack, everybody flap my jack.
+    Flippity flap, flippity flap, put the pancake on my stack, and everybody flap my jack (ker pfth).
+    We got one cake on the bottom, on top, and in the middle. You pour a little batter and you put it on the griddle.
+    And then you're all done - if you want more you can come back! So, everybody flippity flap my flap and flap my jack.
+    Oh, flippity flap, flippity flap, put a pancake on the stack, everybody flap my jack (oh yes).
+    Flippity flap, flippity flap, put a pancake on the stack, and everybody flap my jack. (Everybody now!)
+    Oh, flippity flap, flippity flap, put a pancake on the stack, everybody flap my jack. (That's right! / You see, sir!)
+    Flippity flap, flippity flap, flippity flap, flippity flap (No, wrong!).
+    Flippity flap, put the pancake on the stack, everybody needs a good breakfast in the day.
+    Flippity flap, flippity flap, put a pancake on the stack, and don't take my butter away (woohoo!).
+    The batter, the batter is soft as silk. The batter, the batter is buttermilk.
+    The batter the batter the better the batter the bitter the batter the batter the better the batter the batter... Play ball!
+    A-flippity flap, flippity flap, put a pancake on the stack, everybody flap my jack. (Everybody now!)
+    Flippity flap, flippity flap, put the pancake on the stack, and everybody flap my jack!
+    Aenean quis eros quam. Donec dui libero, vehicula commodo interdum sit amet, rutrum quis velit. Ut molestie, leo sit amet finibus tincidunt, felis elit mollis quam, vel tincidunt arcu nulla id nisl. Vestibulum luctus commodo rutrum. Pellentesque mollis libero ac faucibus venenatis. Quisque quis accumsan ante.
+    </p>
+  </bio>
+  <nav id="mainNav">
+    <p><a href="french.html">Français</a></p>
+    <h3>History</h3>
+    <p><strong>Contact Information:</strong> None</p>
+    <p><strong>Elementary School:</strong> Standiford</p>
+    <p><strong>Middle School:</strong> Daniel J Savage</p>
+    <p><strong>High School:</strong> Santa Catalina</p>
+    <p><strong>College:</strong> Undetermined</p>
+    <p><strong>Likes:</strong> Long car rides, warm printer paper, rightful retribution, hair care.</p>
+    <p><strong>Dislikes:</strong> Two songs playing at once, meditation, standing up, cashiers.</p>
+    <p>♡</p>
+    <p><a href="https://www.google.com/search?q=beans&rlz=1C5CHFA_enUS855&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjmtv-0tbzjAhVLip4KHZYWDvsQ_AUIECgB&biw=1440&bih=821">Link to portfolio</a></p>
+    <p><a href="index.html">Personal blog</a></p>
+    <p><a href="https://www.youtube.com/watch?v=om_POD45fCs">Something special</a></p>
+
+    <!--slap a cool button here-->
+  </nav>
+  <div id="sideBar">
+    <!--<button onclick="document.getElementById('myImage').src='7.jpg'">Photo 1</button>
+    <button onclick="document.getElementById('myImage').src='6.jpeg'">Photo 2</button>
+    <button onclick="document.getElementById('myImage').src='4.jpg'">Photo 3</button>
+    <button onclick="document.getElementById('myImage').src='3.jpg'">Photo 4</button>
+    <button onclick="document.getElementById('myImage').src='5.jpg'">Photo 5</button>
+    <button onclick="document.getElementById('myImage').src='2.jpg'">Photo 6</button>
+    <button onclick="document.getElementById('myImage').src='1.jpg'">Photo 7</button>
+    <img id="myImage" src="7.jpg" style="width:180px">-->
+    <img src="7.jpg" width="180">
+    <p>Girls Who Code</p>
+    <img src="6.jpeg" width="180">
+    <p>School Friends</p>
+    <img src="4.jpg" width="180" >
+    <p>Theater Tech</p>
+  </div>
+  <footer id="pageFooter">
+    <p>Credits:
+    <a href="https://www.quackit.com/html/html_editors/scratchpad/?example=/html/templates/grid/css_grid_layout_template_1">Website template, </a>
+    <a href="https://www.dictionary.com/browse/credits">Credits.</a></p>
+  </footer>
+</body>
+</html>

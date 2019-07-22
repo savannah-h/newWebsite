@@ -1,0 +1,120 @@
+<html>
+<head>
+  <script src="myScript.js"></script>
+  <style>
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav bio bar"
+    "nav footer footer";
+  grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+header, footer, bio, nav, div {
+  padding: 1.2em;
+  background: aliceblue;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainBio {
+  grid-area: bio;
+  }
+#mainNav {
+  grid-area: nav;
+  }
+#sideBar {
+  grid-area: bar;
+  }
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "bio"
+      "bar"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
+ }
+}
+
+</style>
+</head>
+
+<body>
+  <header id="pageHeader"><h1>Savannah Bryn Halvorson</h1></header>
+  <bio id="mainBio">
+    <p>Salut ! Je m'appelle <strong>Savannah.</strong> J'ai 17 ans et je suis en terminale à l'école Santa Catalina de Monterey, bien que je vive à Modesto.</p>
+    <p>Je m'intéresse à l'art, aux puzzles et au codage. J'aime dessiner, dessiner, dessiner et peindre avec des médiums traditionnels, en mettant l'accent sur les humains stylisés. Mon hobby le plus commun est de jouer à des jeux en ligne, en particulier ceux d'une variété de puzzle ou de meurtre-mystère, comme les échecs ou Ace Attorney. J'apprends actuellement comment coder, et je peux programmer en Processing et Python avec compétence. J'apprends aussi le HTML en ce moment, c'est comme ça que j'ai fait ce site ! (Ça et Google...)</p>
+	  <p>Lorsque j'ai commencé à m'intéresser à la programmation à l'école, cela a aussi stimulé quelques-unes de mes autres activités. Par exemple, je vais suivre ma quatrième année de cours de français, ce qui m'a beaucoup passionné en raison des amis que j'ai rencontrés en ligne et qui résident dans les régions francophones. J'aime aussi la technique théâtrale, travailler en coulisses sur des décors ou des costumes pour jouer parfaitement sans jamais avoir à monter sur scène.</p>
+	  <p>Je m'adapte facilement à toutes les situations, je m'investis beaucoup dans ce que je fais actuellement et j'ai le désir de réussir. Peu importe où je me retrouve, je suis déterminé à être un atout précieux.</p>
+    <p>Veuillez m'embaucher.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ex ipsum, accumsan eu augue sit amet, feugiat cursus justo. Nullam volutpat nibh eget massa maximus eleifend. Vestibulum urna magna, pretium et diam ac, efficitur consequat tellus. Integer tempor, justo id tincidunt imperdiet, leo dui venenatis ligula, eget venenatis erat mauris id magna.
+      Flippity flap, flippity flap, mets la crêpe sur la pile, tout le monde flap mon jack.
+      Flippity flap, flippity flap, mets la crêpe sur ma pile, et tout le monde flap mon jack (ker pfth).
+      On a un gâteau en bas, en haut et au milieu. Tu verses un peu de pâte et tu la mets sur la plaque.
+      Et puis vous en avez fini - si vous en voulez plus, vous pouvez revenir ! Alors, tout le monde se moque de moi et de mon jack.
+      Oh, flippity flap, flippity flap, mets une crêpe sur la pile, tout le monde flap mon jack (oh oui).
+      Flippity flap, flippity flap, mets une crêpe sur la pile, et tout le monde flap mon jack. (Tout le monde maintenant !)
+      Oh, flippity flap, flippity flap, mets une crêpe sur la pile, tout le monde flap mon jack. (C'est exact ! / Vous voyez, monsieur !)
+      Flippity flap, flippity flap, flippity flap, flippity flap, flippity flap (Non, faux !).
+      Flippity flap, mets la crêpe sur la pile, tout le monde a besoin d'un bon petit déjeuner dans la journée.
+      Flippity flap, flippity flap, mets une crêpe sur la pile, et n'enlève pas mon beurre (woohoo !).
+      La pâte, la pâte est douce comme de la soie. Le batteur, le batteur est du babeurre.
+      Le batteur le batteur le batteur le mieux le batteur le batteur l'amer le batteur le batteur le mieux le batteur le batteur le batteur.... Jouez au ballon !
+      A-flippity flap, flippity flap, mettez une crêpe sur la pile, tout le monde bat mon jack. (Tout le monde maintenant !)
+      Flippity flap, flippity flap, mets la crêpe sur la pile, et tout le monde bat mon jack !
+    Aenean quis eros quam. Donec dui libero, vehicula commodo interdum sit amet, rutrum quis velit. Ut molestie, leo sit amet finibus tincidunt, felis elit mollis quam, vel tincidunt arcu nulla id nisl. Vestibulum luctus commodo rutrum. Pellentesque mollis libero ac faucibus venenatis. Quisque quis accumsan ante.
+    </p>
+  </bio>
+  <nav id="mainNav">
+    <p><a href="template.html">English</a></p>
+    <h3>Mon Histoire</h3>
+    <p><strong>Informations de contact:</strong> Aucune</p>
+    <p><strong>École primaire:</strong> Standiford</p>
+    <p><strong>Collège:</strong> Daniel J Savage</p>
+    <p><strong>Lycée:</strong> Santa Catalina</p>
+    <p><strong>Université:</strong> Indéterminé</p>
+    <p><strong>Mes goûts:</strong> Les longs trajets en voiture, le papier d'imprimante chaud, les représailles légitimes, les soins capillaires.</p>
+    <p><strong>Mes aversions:</strong> Deux chansons jouées en même temps, méditation, debout, des caissiers.</p>
+    <p>♡</p>
+    <p><a href="https://www.google.fr/search?q=f%C3%A8ves&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiu9LCysr_jAhVRo54KHQXSAZYQ_AUIESgB&biw=1440&bih=821">Lien vers le portfolio</a></p>
+    <p><a href="indexf.html">Blog personnel</a></p>
+    <p><a href="https://www.youtube.com/watch?v=om_POD45fCs">Quelque chose de spécial</a></p>
+
+    <!--slap a cool button here-->
+  </nav>
+  <div id="sideBar">
+    <!--<button onclick="document.getElementById('myImage').src='7.jpg'">Photo 1</button>
+    <button onclick="document.getElementById('myImage').src='6.jpeg'">Photo 2</button>
+    <button onclick="document.getElementById('myImage').src='4.jpg'">Photo 3</button>
+    <button onclick="document.getElementById('myImage').src='3.jpg'">Photo 4</button>
+    <button onclick="document.getElementById('myImage').src='5.jpg'">Photo 5</button>
+    <button onclick="document.getElementById('myImage').src='2.jpg'">Photo 6</button>
+    <button onclick="document.getElementById('myImage').src='1.jpg'">Photo 7</button>
+    <img id="myImage" src="7.jpg" style="width:180px">-->
+    <img src="7.jpg" width="180">
+    <p>Des Filles Qui Codent</p>
+    <img src="6.jpeg" width="180">
+    <p>Camarades de Classe</p>
+    <img src="4.jpg" width="180" >
+    <p>Techniciens de Théâtre</p>
+  </div>
+  <footer id="pageFooter">
+    <p>Générique:
+    <a href="https://www.quackit.com/html/html_editors/scratchpad/?example=/html/templates/grid/css_grid_layout_template_1">Modèle de site, </a>
+    <a href="https://www.larousse.fr/dictionnaires/francais/cr%c3%a9dit/20314?q=cr%c3%a9dits#20203">Crédits.</a></p>
+  </footer>
+</body>
+</html>
